@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
-from core.database import get_db
+from core.database_customers_orders import get_db
 
 from domain.order.order_service_4 import OrderService
 from domain.order.order_schema_2 import Order, OrderCreate
