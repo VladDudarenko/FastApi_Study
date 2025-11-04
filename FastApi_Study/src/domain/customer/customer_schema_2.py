@@ -14,7 +14,7 @@ class Customer(BaseModel):
     email: Optional[str]
     phone: Optional[str]
     address: Optional[str]
-    orders: List[Order] = []
+    #orders: List[Order] = []
 
     class Config:
         from_attributes = True

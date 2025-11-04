@@ -14,3 +14,6 @@ class CustomerService:
 
     def get_customer_with_orders(self, customer_id: int):
         return self.repo.get_by_id(customer_id)
+
+    def get_all_customers(self):
+        return self.repo.get_all()
