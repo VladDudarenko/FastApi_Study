@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 
-from core.database_customers_orders import Base
+from src.core.database_customers_orders import Base
 
 class OrderEntity(Base):
     __tablename__ = 'orders'

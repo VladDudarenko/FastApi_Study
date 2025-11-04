@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from domain.customer.customer_entity_1 import CustomerEntity
-from domain.customer.customer_schema_2  import CustomerCreate
+from src.domain.customer.customer_entity_1 import CustomerEntity
+from src.domain.customer.customer_schema_2  import CustomerCreate
 
 class CustomerRepository:
     def __init__(self, db: Session):

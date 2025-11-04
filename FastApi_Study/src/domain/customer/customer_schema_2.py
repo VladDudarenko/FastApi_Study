@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, List
-from domain.order.order_schema_2 import Order
+from src.domain.order.order_schema_2 import Order
 
 class CustomerCreate(BaseModel):
     name: Optional[str] = None

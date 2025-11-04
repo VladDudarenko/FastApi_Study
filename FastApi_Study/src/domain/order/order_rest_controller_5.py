@@ -3,8 +3,8 @@ from sqlalchemy.orm import Session
 from typing import List
 from core.database_customers_orders import get_db
 
-from domain.order.order_service_4 import OrderService
-from domain.order.order_schema_2 import Order, OrderCreate
+from src.domain.order.order_service_4 import OrderService
+from src.domain.order.order_schema_2 import Order, OrderCreate
 
 
 router = APIRouter(prefix="/orders", tags=["Orders"])

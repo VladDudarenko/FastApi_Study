@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from domain.order.order_entity_1 import OrderEntity
-from domain.order.order_schema_2 import OrderCreate
+from src.domain.order.order_entity_1 import OrderEntity
+from src.domain.order.order_schema_2 import OrderCreate
 
 class OrderRepository:
     def __init__(self, db: Session):
