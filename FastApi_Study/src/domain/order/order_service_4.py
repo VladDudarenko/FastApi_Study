@@ -9,3 +9,6 @@ class OrderService:
 
     def create_order(self, order: OrderCreate):
         return self.repo.create(order)
+
+    def get_order_by_id(self, order_id: int):
+        return self.repo.get_by_id(order_id)

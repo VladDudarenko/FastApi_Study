@@ -19,3 +19,8 @@ def create_order(order: OrderCreate, db: Session = Depends(get_db)):
 def get_orders(db: Session = Depends(get_db)):
     service = OrderService(db)
     return service.repo.get_all()
+
+@router.get("/{id}", response_model=Order)
+def get_order_by_id(customer_id: int, db: Session = Depends(get_db)):
+    service = OrderService(db)
+    return service.get_order_by_id(customer_id)
