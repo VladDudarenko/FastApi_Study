@@ -16,3 +16,6 @@ class OrderRepository:
 
     def get_all(self):
         return self.db.query(OrderEntity).all()
+
+    def get_by_id(self, order_id: int):
+        return self.db.query(OrderEntity).filter(OrderEntity.id == order_id).first()
